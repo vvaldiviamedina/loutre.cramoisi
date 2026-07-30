@@ -23,8 +23,16 @@ const NAV = [
     href: "grammar/index.html",
     children: [
       { id: "grammar/articles", label: "Articles", href: "grammar/articles.html" },
-      { id: "grammar/verbs", label: "Verbs", href: "grammar/verbs.html" },
       { id: "grammar/sentence-structure", label: "Sentence structure", href: "grammar/sentence-structure.html" },
+    ],
+  },
+  {
+    id: "verbs",
+    label: "Verbs",
+    href: "verbs/index.html",
+    children: [
+      { id: "verbs/regular-er", label: "Regular -er", href: "verbs/regular-er.html" },
+      { id: "verbs/irregular", label: "Irregular", href: "verbs/irregular.html" },
     ],
   },
   { id: "quiz", label: "Quiz", href: "quiz.html" },
