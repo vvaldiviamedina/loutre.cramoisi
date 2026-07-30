@@ -32,6 +32,8 @@ const NAV = [
     href: "verbs/index.html",
     children: [
       { id: "verbs/regular-er", label: "Regular -er", href: "verbs/regular-er.html" },
+      { id: "verbs/regular-ir", label: "Regular -ir", href: "verbs/regular-ir.html" },
+      { id: "verbs/regular-re", label: "Regular -re", href: "verbs/regular-re.html" },
       { id: "verbs/irregular", label: "Irregular", href: "verbs/irregular.html" },
     ],
   },
