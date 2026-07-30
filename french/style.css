@@ -154,7 +154,13 @@ body {
 
 h1,
 h2 {
-  color: var(--primary);
+  color: var(--dark);
+  font-weight: 600;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
 }
 
 .breadcrumb {
@@ -182,11 +188,12 @@ td {
   text-align: left;
   padding: 0.65rem 0.75rem;
   border-bottom: 1px solid var(--border);
+  color: var(--dark);
 }
 
 th {
-  background: var(--light);
-  color: var(--dark);
+  border-bottom: 2px solid var(--dark);
+  font-weight: 600;
 }
 
 tr:hover td {
@@ -206,11 +213,6 @@ tr:hover td {
 
 section.topic {
   margin-bottom: 2.5rem;
-}
-
-section.topic h2 {
-  border-bottom: 2px solid var(--border);
-  padding-bottom: 0.4rem;
 }
 
 .example {
