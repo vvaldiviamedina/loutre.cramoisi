@@ -6,45 +6,37 @@
   <title>Greetings - Apprendre le français</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <a class="brand" href="../index.html">Apprendre le français</a>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="index.html" class="active">Vocabulary</a>
-        <a href="../grammar.html">Grammar</a>
-        <a href="../quiz.html">Quiz</a>
-      </nav>
+<body data-page="vocabulary/greetings" data-base="../">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <div class="content-inner">
+        <p class="breadcrumb"><a href="index.html">Vocabulary</a> / Greetings</p>
+        <h1>Greetings</h1>
+
+        <table>
+          <thead>
+            <tr><th>French</th><th>English</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bonjour</td><td>Hello / Good morning</td></tr>
+            <tr><td>Bonsoir</td><td>Good evening</td></tr>
+            <tr><td>Salut</td><td>Hi / Bye (informal)</td></tr>
+            <tr><td>Au revoir</td><td>Goodbye</td></tr>
+            <tr><td>Merci</td><td>Thank you</td></tr>
+            <tr><td>S'il vous plaît</td><td>Please (formal)</td></tr>
+            <tr><td>De rien</td><td>You're welcome</td></tr>
+            <tr><td>Enchanté(e)</td><td>Nice to meet you</td></tr>
+          </tbody>
+        </table>
+
+        <footer>
+          <p>&copy; <span id="year"></span> Apprendre le français</p>
+        </footer>
+      </div>
     </div>
-  </header>
-
-  <main class="container">
-    <p class="breadcrumb"><a href="index.html">Vocabulary</a> / Greetings</p>
-    <h1>Greetings</h1>
-
-    <table>
-      <thead>
-        <tr><th>French</th><th>English</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Bonjour</td><td>Hello / Good morning</td></tr>
-        <tr><td>Bonsoir</td><td>Good evening</td></tr>
-        <tr><td>Salut</td><td>Hi / Bye (informal)</td></tr>
-        <tr><td>Au revoir</td><td>Goodbye</td></tr>
-        <tr><td>Merci</td><td>Thank you</td></tr>
-        <tr><td>S'il vous plaît</td><td>Please (formal)</td></tr>
-        <tr><td>De rien</td><td>You're welcome</td></tr>
-        <tr><td>Enchanté(e)</td><td>Nice to meet you</td></tr>
-      </tbody>
-    </table>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Apprendre le français</p>
-    </div>
-  </footer>
+  </div>
 
   <script src="../script.js"></script>
 </body>

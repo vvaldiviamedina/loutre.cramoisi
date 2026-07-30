@@ -6,48 +6,40 @@
   <title>Vocabulary - Apprendre le français</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <a class="brand" href="../index.html">Apprendre le français</a>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="index.html" class="active">Vocabulary</a>
-        <a href="../grammar.html">Grammar</a>
-        <a href="../quiz.html">Quiz</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="vocabulary" data-base="../">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
 
-  <main class="container">
-    <h1>Vocabulary</h1>
-    <p>Word lists grouped by topic. Click a topic to open it, or add a new page as you learn more.</p>
+    <div class="content">
+      <div class="content-inner">
+        <h1>Vocabulary</h1>
+        <p>Word lists grouped by topic. Click a topic to open it, or add a new page as you learn more.</p>
 
-    <div class="card-grid">
-      <a class="card" href="greetings.html">
-        <h3>Greetings</h3>
-        <p>Bonjour, merci, au revoir...</p>
-      </a>
-      <a class="card" href="numbers.html">
-        <h3>Numbers</h3>
-        <p>Un, deux, trois...</p>
-      </a>
-      <a class="card" href="food.html">
-        <h3>Food</h3>
-        <p>Le pain, le fromage, l'eau...</p>
-      </a>
-      <a class="card" href="places.html">
-        <h3>Places</h3>
-        <p>La ville, la gare, la boulangerie...</p>
-      </a>
-    </div>
-  </main>
+        <div class="card-grid">
+          <a class="card" href="greetings.html">
+            <h3>Greetings</h3>
+            <p>Bonjour, merci, au revoir...</p>
+          </a>
+          <a class="card" href="numbers.html">
+            <h3>Numbers</h3>
+            <p>Un, deux, trois...</p>
+          </a>
+          <a class="card" href="food.html">
+            <h3>Food</h3>
+            <p>Le pain, le fromage, l'eau...</p>
+          </a>
+          <a class="card" href="places.html">
+            <h3>Places</h3>
+            <p>La ville, la gare, la boulangerie...</p>
+          </a>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Apprendre le français</p>
+        <footer>
+          <p>&copy; <span id="year"></span> Apprendre le français</p>
+        </footer>
+      </div>
     </div>
-  </footer>
+  </div>
 
   <script src="../script.js"></script>
 </body>

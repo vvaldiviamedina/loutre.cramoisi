@@ -3,6 +3,84 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+// Sidebar navigation — add a page here and it shows up on every page automatically.
+const NAV = [
+  { id: "home", label: "Home", href: "index.html" },
+  {
+    id: "vocabulary",
+    label: "Vocabulary",
+    href: "vocabulary/index.html",
+    children: [
+      { id: "vocabulary/greetings", label: "Greetings", href: "vocabulary/greetings.html" },
+      { id: "vocabulary/numbers", label: "Numbers", href: "vocabulary/numbers.html" },
+      { id: "vocabulary/food", label: "Food", href: "vocabulary/food.html" },
+      { id: "vocabulary/places", label: "Places", href: "vocabulary/places.html" },
+    ],
+  },
+  {
+    id: "grammar",
+    label: "Grammar",
+    href: "grammar/index.html",
+    children: [
+      { id: "grammar/articles", label: "Articles", href: "grammar/articles.html" },
+      { id: "grammar/verbs", label: "Verbs", href: "grammar/verbs.html" },
+      { id: "grammar/sentence-structure", label: "Sentence structure", href: "grammar/sentence-structure.html" },
+    ],
+  },
+  { id: "quiz", label: "Quiz", href: "quiz.html" },
+];
+
+function buildSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  if (!sidebar) return;
+
+  const base = document.body.dataset.base || "";
+  const current = document.body.dataset.page || "";
+
+  const brand = document.createElement("a");
+  brand.className = "sidebar-brand";
+  brand.href = base + "index.html";
+  brand.textContent = "Apprendre le français";
+  sidebar.appendChild(brand);
+
+  const nav = document.createElement("nav");
+
+  NAV.forEach((item) => {
+    const group = document.createElement("div");
+    group.className = "nav-group";
+
+    const isParentActive =
+      current === item.id || current.startsWith(item.id + "/");
+
+    const top = document.createElement("a");
+    top.className = "nav-top" + (isParentActive ? " active" : "");
+    top.href = base + item.href;
+    top.textContent = item.label;
+    group.appendChild(top);
+
+    if (item.children) {
+      const list = document.createElement("ul");
+      list.className = "nav-children";
+      item.children.forEach((child) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = base + child.href;
+        a.textContent = child.label;
+        if (current === child.id) a.className = "active";
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      group.appendChild(list);
+    }
+
+    nav.appendChild(group);
+  });
+
+  sidebar.appendChild(nav);
+}
+
+buildSidebar();
+
 const words = [
   { fr: "Bonjour", en: "Hello" },
   { fr: "Merci", en: "Thank you" },

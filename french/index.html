@@ -6,46 +6,38 @@
   <title>Apprendre le français</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Apprendre le français</a>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="vocabulary/index.html">Vocabulary</a>
-        <a href="grammar.html">Grammar</a>
-        <a href="quiz.html">Quiz</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="home" data-base="">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Bienvenue !</h1>
-      <p>A starter template for learning French — vocabulary lists, grammar notes, and flashcard quizzes.</p>
-    </section>
+    <div class="content">
+      <div class="content-inner">
+        <section class="hero">
+          <h1>Bienvenue !</h1>
+          <p>A starter template for learning French — vocabulary lists, grammar notes, and flashcard quizzes.</p>
+        </section>
 
-    <div class="card-grid">
-      <a class="card" href="vocabulary/index.html">
-        <h3>Vocabulary</h3>
-        <p>Browse themed word lists like greetings, numbers, and food.</p>
-      </a>
-      <a class="card" href="grammar.html">
-        <h3>Grammar</h3>
-        <p>Learn the basics of articles, verb conjugation, and sentence structure.</p>
-      </a>
-      <a class="card" href="quiz.html">
-        <h3>Quiz</h3>
-        <p>Test yourself with interactive flashcards.</p>
-      </a>
-    </div>
-  </main>
+        <div class="card-grid">
+          <a class="card" href="vocabulary/index.html">
+            <h3>Vocabulary</h3>
+            <p>Browse themed word lists like greetings, numbers, and food.</p>
+          </a>
+          <a class="card" href="grammar/index.html">
+            <h3>Grammar</h3>
+            <p>Learn the basics of articles, verbs, and sentence structure.</p>
+          </a>
+          <a class="card" href="quiz.html">
+            <h3>Quiz</h3>
+            <p>Test yourself with interactive flashcards.</p>
+          </a>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Apprendre le français</p>
+        <footer>
+          <p>&copy; <span id="year"></span> Apprendre le français</p>
+        </footer>
+      </div>
     </div>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -6,45 +6,37 @@
   <title>Food - Apprendre le français</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <a class="brand" href="../index.html">Apprendre le français</a>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="index.html" class="active">Vocabulary</a>
-        <a href="../grammar.html">Grammar</a>
-        <a href="../quiz.html">Quiz</a>
-      </nav>
+<body data-page="vocabulary/food" data-base="../">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <div class="content-inner">
+        <p class="breadcrumb"><a href="index.html">Vocabulary</a> / Food</p>
+        <h1>Food</h1>
+
+        <table>
+          <thead>
+            <tr><th>French</th><th>English</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Le pain</td><td>Bread</td></tr>
+            <tr><td>Le fromage</td><td>Cheese</td></tr>
+            <tr><td>L'eau</td><td>Water</td></tr>
+            <tr><td>Le café</td><td>Coffee</td></tr>
+            <tr><td>La pomme</td><td>Apple</td></tr>
+            <tr><td>Le vin</td><td>Wine</td></tr>
+            <tr><td>La viande</td><td>Meat</td></tr>
+            <tr><td>Les légumes</td><td>Vegetables</td></tr>
+          </tbody>
+        </table>
+
+        <footer>
+          <p>&copy; <span id="year"></span> Apprendre le français</p>
+        </footer>
+      </div>
     </div>
-  </header>
-
-  <main class="container">
-    <p class="breadcrumb"><a href="index.html">Vocabulary</a> / Food</p>
-    <h1>Food</h1>
-
-    <table>
-      <thead>
-        <tr><th>French</th><th>English</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Le pain</td><td>Bread</td></tr>
-        <tr><td>Le fromage</td><td>Cheese</td></tr>
-        <tr><td>L'eau</td><td>Water</td></tr>
-        <tr><td>Le café</td><td>Coffee</td></tr>
-        <tr><td>La pomme</td><td>Apple</td></tr>
-        <tr><td>Le vin</td><td>Wine</td></tr>
-        <tr><td>La viande</td><td>Meat</td></tr>
-        <tr><td>Les légumes</td><td>Vegetables</td></tr>
-      </tbody>
-    </table>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Apprendre le français</p>
-    </div>
-  </footer>
+  </div>
 
   <script src="../script.js"></script>
 </body>

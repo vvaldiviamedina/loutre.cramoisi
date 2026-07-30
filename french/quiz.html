@@ -6,42 +6,34 @@
   <title>Quiz - Apprendre le français</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Apprendre le français</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="vocabulary/index.html">Vocabulary</a>
-        <a href="grammar.html">Grammar</a>
-        <a href="quiz.html" class="active">Quiz</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="quiz" data-base="">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
 
-  <main class="container">
-    <h1>Flashcard Quiz</h1>
-    <p>Click a card to reveal the translation. Mark whether you got it right.</p>
+    <div class="content">
+      <div class="content-inner">
+        <h1>Flashcard Quiz</h1>
+        <p>Click a card to reveal the translation. Mark whether you got it right.</p>
 
-    <div id="flashcard" class="flashcard">
-      <div class="flashcard-inner">
-        <div class="flashcard-face flashcard-front" id="card-front">Bonjour</div>
-        <div class="flashcard-face flashcard-back" id="card-back">Hello</div>
+        <div id="flashcard" class="flashcard">
+          <div class="flashcard-inner">
+            <div class="flashcard-face flashcard-front" id="card-front">Bonjour</div>
+            <div class="flashcard-face flashcard-back" id="card-back">Hello</div>
+          </div>
+        </div>
+
+        <div class="quiz-controls">
+          <button class="secondary" id="btn-wrong">I didn't know it</button>
+          <button class="primary" id="btn-right">I knew it</button>
+        </div>
+        <p id="quiz-progress"></p>
+
+        <footer>
+          <p>&copy; <span id="year"></span> Apprendre le français</p>
+        </footer>
       </div>
     </div>
-
-    <div class="quiz-controls">
-      <button class="secondary" id="btn-wrong">I didn't know it</button>
-      <button class="primary" id="btn-right">I knew it</button>
-    </div>
-    <p id="quiz-progress"></p>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Apprendre le français</p>
-    </div>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
